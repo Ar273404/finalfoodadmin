@@ -1,0 +1,118 @@
+/* General styles for the List component */
+.list {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.list p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.list-table {
+  margin-top: 10px;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  animation: slideIn 0.5s ease-in-out;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-table-format.title {
+  background: linear-gradient(45deg, #df1010, #09a06b);
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.list-table-format p {
+  text-align: center;
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-table-format b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-table-format:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.list-table-format:nth-child(odd) {
+  background-color: #fff;
+}
+
+.list-table-format:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.02);
+}
+
+.list-table-format:hover img {
+  transform: scale(1.1);
+}
+
+/* Button styles */
+.list-table-format .action-btn {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-table-format .action-btn:hover {
+  background-color:green;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
