@@ -4,6 +4,7 @@ import assets from '../../assets/assets'
 import {Link, NavLink} from 'react-router-dom'
 const Sidebar = () => {
   return (
+    <>
     <div className='sidebar'>
         <div className='sidebar-options'>
                <NavLink to='/add' className='sidebar-option'>
@@ -23,6 +24,8 @@ const Sidebar = () => {
 
         </div>
     </div>
+    </>
+     
   )
 }
 
