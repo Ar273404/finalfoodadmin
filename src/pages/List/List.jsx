@@ -9,7 +9,7 @@ const List = ({url}) => {
 
   const fetchList = async () => {
     try {
-      const response = await axios.get(`${url}/api/food/list`);
+      const response = await axios.get(`${url}/food/list`);
       if (response.status === 200) {
         setList(response.data.data);
       } else {

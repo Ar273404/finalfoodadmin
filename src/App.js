@@ -12,7 +12,7 @@ import { MainNavbar } from './components/Navbar/MainNavbar';
 import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
-  const url = "https://finalfoodbackend.vercel.app";
+  const url = "https://fooddelivery-backend-3juj.onrender.com";
   return (
     <div>
       <ToastContainer />
